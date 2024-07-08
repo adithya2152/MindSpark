@@ -1,10 +1,12 @@
  
 import React from 'react';
 import styles from './AboutPage.module.css';
-
+import Header from '@/components/Header';
 const AboutPage = () => {
     return (
-        <div className={styles['about-container']}>
+        <div>
+            <Header/>
+             <div className={styles['about-container']}>
             <h1>About MindSpark</h1>
             <p>Welcome to MindSpark, where learning meets engagement!</p>
 
@@ -33,6 +35,8 @@ const AboutPage = () => {
 
             <p>Join the MindSpark community today and embark on a journey of discovery and growth.</p>
         </div>
+        </div>
+       
     );
 };
 

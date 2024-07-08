@@ -1,6 +1,4 @@
-"use client"
 import { useEffect, useState } from "react";
-
 import "../../../styles/questions.css";
 
 type Props = {
@@ -30,6 +28,7 @@ export default function Question({ params }: Props) {
 
     useEffect(() => {
         const fetchQuestions = async () => {
+            setLoading(true);
             try {
                 const response = await fetch(`http://localhost:3000/questionhandler/${params.id}`);
                 if (!response.ok) {
@@ -97,7 +96,7 @@ export default function Question({ params }: Props) {
                 setMessage(`Error: ${data.message}`);
             }
         } catch (err) {
-            console.error('Error:', error);
+            console.error('Error:', err);
             setMessage('An error occurred. Please try again.');
         }
     };
@@ -125,7 +124,6 @@ export default function Question({ params }: Props) {
             </div>
             <div className="question-list">
                 {questions.map((ques, index) => (
-                    //conditional part for crtness highlighting
                     <div key={index} className={`question-item ${submitted ? (selectedAnswers[ques.question_id] === ques.correct_answer ? 'correct' : 'incorrect') : ''}`}>
                         <h3 className="question-text">{ques.question}</h3>
                         {ques.options.map((opt, optIndex) => (
