@@ -2,6 +2,7 @@
 
 import {useState} from "react"
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from 'react';
 import styles from './Login.module.css';
 
@@ -9,6 +10,7 @@ export default function Login() {
     const [username , setUsername] = useState("");
     const [password , setPassword] = useState("");
     const [message , setMessage] = useState("");
+    const router  = useRouter();
 
     const handleSubmit = async (e:React.FormEvent)=>{
         e.preventDefault();
@@ -25,6 +27,7 @@ export default function Login() {
 
             if (response.ok) {
                 setMessage(data.message);
+                router.push("/home")
             } else {
                 setMessage(`Error: ${data.message}`);
             }

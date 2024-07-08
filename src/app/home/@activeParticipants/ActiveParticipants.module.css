@@ -1,0 +1,18 @@
+.active {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.active h2 {
+    color: #4CAF50;
+}
+
+.active ul {
+    list-style: none;
+    padding: 0;
+}
+
+.active li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

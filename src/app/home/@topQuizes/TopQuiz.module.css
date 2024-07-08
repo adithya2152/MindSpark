@@ -1,0 +1,18 @@
+.topquiz {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.topquiz h2 {
+    color: #3F51B5;
+}
+
+.topquiz ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topquiz li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

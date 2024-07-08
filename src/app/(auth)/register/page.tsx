@@ -2,12 +2,15 @@
 import { useState } from 'react';
 import React from 'react';
 import styles from './Register.module.css';
+import { useRouter } from "next/navigation";
+
 import Link from 'next/link';
 export default function Register() {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const router  = useRouter();
 
     const handleSubmit = async (e:React.FormEvent) => {
         e.preventDefault();
@@ -18,13 +21,15 @@ export default function Register() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify({ username, password ,email}),
             });
 
             const data = await response.json();
 
             if (response.ok) {
                 setMessage(data.message);
+                router.push("/home")
+
             } else {
                 setMessage(`Error: ${data.message}`);
             }

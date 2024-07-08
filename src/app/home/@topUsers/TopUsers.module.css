@@ -1,0 +1,18 @@
+.topusers {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.topusers h2 {
+    color: #9C27B0;
+}
+
+.topusers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topusers li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

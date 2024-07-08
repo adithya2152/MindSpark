@@ -1,0 +1,19 @@
+.history {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.history h2 {
+    color: #FF5722;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
