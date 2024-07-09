@@ -1,7 +1,12 @@
+"use client"
 import React from 'react';
-import "../../src/app/styles/Header.css"
+
+import "../../src/app/styles/Header.css";
 
 const Header = () => {
+    
+    
+
     return (
         <header className="navbar">
             <div className="container">
@@ -12,12 +17,9 @@ const Header = () => {
                     <a href="/quiz" className="nav-link">Explore</a>
                     <a href="/about" className="nav-link">About</a>
                     <a href="/contact" className="nav-link">Contact</a>
-                    <div className="search-bar">
-                        <input type="text" placeholder="Search Quiz" className="search-input" />
-                        <button type="button" className="search-button">
-                            Search
-                        </button>
-                    </div>
+                    {/* <div className='profile'>
+                        <button className="profile-btn" onClick={handleLogout}>Logout</button>
+                    </div> */}
                 </nav>
             </div>
         </header>

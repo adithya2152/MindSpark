@@ -2,7 +2,6 @@
 import { useState , useEffect } from "react"; 
 import Card from "@/components/Card";
 import styles from "../@topUsers/TopUsers.module.css"
-import Link from "next/link";
 
 
 interface user{

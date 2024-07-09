@@ -1,5 +1,4 @@
-// pages/contact.tsx
-
+ 
 import Header from '@/components/Header';
 import React from 'react';
 import Head from 'next/head';

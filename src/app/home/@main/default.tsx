@@ -41,28 +41,18 @@ export default function Main() {
                     <Link className={styles.button} href="/host">Host a Quiz</Link>
                 </div>
                 <div className={styles.stats}>
-                   <Link href="/home/hosted"> 
-                        <div className={styles.stat}>
-                                <h3>Hosted Quizzes</h3>
-                                <p>{count ? count.hosted_count : 'Loading...'}</p>
-                        </div>
-                    </Link>
-
-                    <Link href="">
-                        <div className={styles.stat}>
-                            <h3>Hosted Quiz Participants</h3>
-                            <p>{count ? count.hosted_response : 'Loading...'}</p>
-                        </div>
-                    </Link>
-
-                   <Link href="">
-                        <div className={styles.stat}>
-                                <h3>Completed Quizzes</h3>
-                                <p>{count ? count.participated : 'Loading...'}</p>
-                            </div>
-                   </Link>
-
-                    
+                    <div className={styles.stat}>
+                        <h3>Hosted Quizzes</h3>
+                        <p>{count ? count.hosted_count : 'Loading...'}</p>
+                    </div>
+                    <div className={styles.stat}>
+                        <h3>Hosted Quiz Participants</h3>
+                        <p>{count ? count.hosted_response : 'Loading...'}</p>
+                    </div>
+                    <div className={styles.stat}>
+                        <h3>Completed Quizzes</h3>
+                        <p>{count ? count.participated : 'Loading...'}</p>
+                    </div>
                 </div>
                 <div className={styles.features}>
                     <div className={styles.feature}>

@@ -114,7 +114,7 @@ export default function Question({ params }: Props) {
     const decodedQuizTitle = decodeURIComponent(params.type);
 
     return (
-        <div className="quiz-container">
+        <div className="question-container">
             <div className="score-container">
                 <h2>Quiz Title: {decodedQuizTitle}</h2>
                 <div className="score">

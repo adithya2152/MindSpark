@@ -15,4 +15,19 @@
 .topquiz li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.topquiz li:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.anchor {
+    text-decoration: none;
+    color: inherit;
+}
+
+.anchor:hover {
+    text-decoration: underline;
 }

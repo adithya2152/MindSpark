@@ -34,32 +34,21 @@
 }
 
 .nav-link:hover {
-    color: #ffcc00; /* Change to your preferred hover color */
+    color: #ffcc00;  
 }
 
-.search-bar {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+.profile {
+    margin-left: 10px;
 }
 
-.search-input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-}
-
-.search-button {
-    padding: 0.5rem 1rem;
-    background-color: #ffcc00; /* Button background color */
+.profile-btn {
+    background-color: transparent;
     border: none;
-    color: #333;
-    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.search-button:hover {
-    background-color: #e6b800; /* Change to a darker shade for hover effect */
+.profile-btn:hover {
+    color: #ffcc00; /* Change color on hover if needed */
 }

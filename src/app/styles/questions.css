@@ -1,4 +1,6 @@
-.quiz-container {
+.question-container {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
     margin: auto;
     background-color: #f9f9f9;
@@ -67,6 +69,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 20px;
+
 }
 
 .submit-button:hover {
